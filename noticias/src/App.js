@@ -14,7 +14,7 @@ function App() {
   //Una vez definida la categoria debo hacer un llamado a la API
   useEffect(() => {
     const consultarAPI = async () => {
-      const url = `http://newsapi.org/v2/top-headlines?country=ar&category=${categoria}&apiKey=72fd479338a646689be0e58d70694398`;
+      const url = `https://newsapi.org/v2/top-headlines?country=ar&category=${categoria}&apiKey=72fd479338a646689be0e58d70694398`;
       const respuesta = await fetch(url);
       const noticias = await respuesta.json();
 
